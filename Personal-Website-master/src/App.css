@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif, "Langar", -apple-system,
+    BlinkMacSystemFont, cursive, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* background-color: rgba(8, 25, 53, 0.993); */
+  background-color: rgb(0, 0, 0);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  position: fixed;
+  z-index: 100000;
+}
+:root {
+  --projectText: "IBM Plex Sans", sans-serif;
+  --bob: -1px 1px 15px 2px rgba(0, 0, 0, 0.836);
+  --white: #e9e1e1;
+  --box-color: rgb(0, 0, 0);
+  --cardTextColor: #2dbed2;
+}
+
+::-webkit-scrollbar {
+  width: 1.75em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(43, 43, 41);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(24, 23, 23);
+  border: 0.25em solid rgb(137, 39, 17);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 55, 55, 0.3);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(0, 0, 0);
+}

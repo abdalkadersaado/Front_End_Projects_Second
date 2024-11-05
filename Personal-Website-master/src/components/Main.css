@@ -1,0 +1,255 @@
+.centrePiece {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+.introduction {
+  width: 80vw;
+
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 100px;
+  /* background-color: rgba(7, 6, 66, 0.747); */
+  background-color: var(--box-color);
+  /* background-color: rgba(12, 12, 43, 0.829); */
+  /* box-shadow: -10px 10px 20px 8px rgba(31, 31, 39, 0.747); */
+
+  -webkit-box-shadow: 0 0 5px 2px rgba(71, 71, 80, 0.747);
+  -moz-box-shadow: 0 0 5px 2px rgba(52, 52, 68, 0.747);
+  box-shadow: 0 0 5px 2px rgba(95, 95, 102, 0.747);
+
+  z-index: 10;
+}
+
+.projects,
+.experiences {
+  display: flex;
+  width: 80vw;
+  margin-top: 100px;
+
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* background-color: rgba(12, 12, 43, 0.829); */
+  background-color: var(--box-color);
+
+  z-index: 10;
+  box-shadow: -10px 10px 20px 8px rgba(31, 31, 39, 0.747);
+}
+
+.normalText {
+  margin-top: 50px;
+  padding-left: 15px;
+  font-size: 1.75rem;
+  font-family: var(--projectText);
+  width: 100%;
+  /* 
+  display: flex; */
+
+  color: var(--white);
+}
+
+#bold {
+  font-weight: bold;
+}
+
+.text3 {
+  color: rgb(231, 181, 73);
+}
+
+.special {
+  color: #2dbed2;
+}
+#heading {
+  padding-left: 10px;
+  font-size: 3rem;
+  width: 70%;
+
+  margin: 1px;
+}
+
+.format {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#sub {
+  font-size: 4.5rem;
+  color: var(--white);
+}
+
+#subtitles2 {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: flex-start;
+
+  height: auto;
+  padding-top: 20px;
+  margin: 20px;
+  
+  top: 50px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+/* CHANGE THIS */
+.selected{
+  /* padding-top: 5px; */
+  /* color: #2dbed2; */
+  color: rgba(255, 255, 255, 0.842);
+
+  font-size: 1.5rem;
+  /* background-color: rgb(2, 32, 71); */
+  background-color: rgb(70, 70, 137);
+
+  /* border-style: solid;
+  border-color: rgba(0, 0, 0, 0.788); */
+
+  /*  box-shadow: -1px 1px 5px 0.00000001px rgb(9, 32, 70); */
+
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* border-radius: 0.25rem; */
+}
+
+#heading2 {
+  margin: 1px;
+  display: flex;
+  justify-items: center;
+  font-size: 2rem;
+}
+
+.header {
+  color: white;
+  font-size: 2rem;
+}
+
+#experience {
+  margin-bottom: 50px;
+}
+
+.flipper {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 20px;
+}
+
+.contactMe {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+.addPadding {
+  padding-top: 10px;
+}
+
+.specialCase {
+  display: flex;
+  flex-direction: column;
+}
+
+.seminar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#ResumeForm {
+  color: grey;
+}
+
+#GithubForm {
+  color: rgb(204, 148, 43);
+}
+
+#linkedinForm {
+  color: lightblue;
+}
+
+#mailForm {
+  color: rgb(56, 56, 219);
+}
+#ResumeForm:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  color: rgb(185, 183, 183);
+}
+
+#GithubForm:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  color: orange;
+}
+
+#linkedinForm:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  color: rgb(91, 185, 216);
+}
+
+#mailForm:hover {
+  transform: scale(1.15);
+  transition-duration: 0.5s;
+  color: blue;
+}
+@media screen and (max-width: 960px) {
+  .format {
+    flex-direction: column;
+  }
+
+  .centrePiece {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introduction,
+  .projects,
+  .experiences {
+    width: 100%;
+
+    /* margin-left: 10px; */
+  }
+
+  .flipper {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .normalText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*
+  .introduction {
+    width: 100%;
+  } */
+}
